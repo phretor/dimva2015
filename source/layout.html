@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="DIMVA is the SIG SIDAR Conference on Detection of Intrusions and Malware & Vulnerability Assessment. It solicits submission of high-quality, original scientific papers presenting novel research on malware analysis, intrusion detection, and related systems security topics.">
+    <meta name="author" content="Federico Maggi, Politecnico di Milano - http://maggi.cc">
+
+    <title>{% block title %}DIMVA 2015 - 12th Conference on Detection
+    of Intrusions and Malware &amp; Vulnerability Assessment{%
+    endblock %}</title>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/flatly/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    <link href="static/css/carousel.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="navbar-wrapper">
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src="static/img/dimva-logo.svg" width="25" /> DIMVA<strong>2015</strong></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            {# <li><a href="/cfp.html"><i class="fa fa-book"></i> Call for Papers</a></li> #}
+            {# <li><a href="/registration.html"><i class="fa fa-sign-in"></i> Registration</a></li> #}
+            <li class="dropdown">
+              <a href="/venue.html" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-map-marker"></i> Venue <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="/venue.html">Venue information</a></li>
+                <li><a href="/venue.html#travel">Travel tips</a></li>
+                <li><a href="/venue.html#accomodation">Accomodation</a></li>
+                <li><a href="/venue.html#tourist">Tourist info</a></li>
+                <li class="divider"></li>
+                <li><a href="http://www.turismo.milano.it/wps/start.jsp?siturlang=EN">Attractions <i class="fa fa-external-link"></i></a></li>
+                <li><a href="http://www.expo2015.org/en">EXPO 2015 <i class="fa fa-external-link"></i></a></li>
+              </ul>
+            </li>
+            {# <li><a href="/program.html"><i class="fa fa-calendar"></i> Program</a></li> #}
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-users"></i> Committees <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="/committees.html#org">Organizing Committee</a></li>
+                {# <li><a href="/committees.html#pc">Program Committee</a></li> #}
+                <li><a href="/committees.html#steering">Steering Committees</a></li>
+              </ul>
+            </li>
+
+            {# <li><a href="/sponsors.html"><i class="fa fa-star"></i> Sponsors</a></li> #}
+            <li><a href="/contacts.html"><i class="fa fa-send"></i> Contacts</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    {% block content %}{%- endblock %}
+
+    <hr class="featurette-divider" />
+
+    <div class="container">
+      <footer>
+        <p>
+          Conference
+          of <a href="http://www1.gi-ev.de/fachbereiche/sicherheit/fg/sidar/">SIG
+            SIDAR</a> of
+          the <a href="http://www1.gi-ev.de/english/at-a-glance/">German
+            Informatics Society</a> (GI).
+
+          <br />
+
+          Technically co-sponsored by the IEEE Computer Society
+          Technical Committee on Security &amp; Privacy
+          (<a href="http://www.ieee-security.org">TCSP</a>).
+
+          <br />
+
+          Local organization
+          by <a href="http://http://www.deib.polimi.it/">DEIB</a> with
+          the precious support of
+          the <a href="https://www.eventi.polimi.it/">Communication and
+            Events Office</a>
+          of <a href="http://www.polimi.it">Politecnico di
+            Milano</a>.
+        </p>
+
+        <p class="pull-right">&copy; 2015 &middot; DIMVA Organization Committee.</p>
+      </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
