@@ -163,3 +163,8 @@ body {
 .pull-left-image img {
     width: 100%;
 }
+
+/* hotels */
+.hotel-info .fa-star {
+    color: orange;
+}

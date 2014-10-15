@@ -152,7 +152,7 @@
   <div class="row">
   {% for h in hotels %}
   <div class="col-md-4">
-    <div class="well">
+    <div class="well hotel-info">
       <h4>{{ h.name }} <small>{% for s in range(0, h.stars) %}<i class="fa fa-star"></i>{% endfor %}</small></h4>
       {% if h.price %}
       <i class="fa fa-money"></i>&nbsp;&nbsp;{{ h.price[0] }}&mdash;{{ h.price[1] }}{{ currency|safe }}<br />
@@ -182,65 +182,67 @@
   <h2 id="tourist">Tourist Info <small>Getting around</small></h2>
 
   <div class="row">
-    <p>Politecnico di Milano in the north of Italy. Milan offers to
-    its visitors both a vibrant business environment and a beautiful
-    historical environment, with ancient buildings, cathedrals, and
-    theaters.</p>
+      <div class="col-md-12">
+          <p>Politecnico di Milano in the north of Italy. Milan offers to
+          its visitors both a vibrant business environment and a beautiful
+          historical environment, with ancient buildings, cathedrals, and
+          theaters.</p>
 
-  <p>With a population of about 1.3 million, Milan, the capital of
-    Lombardy, is located in the Po Valley, not far from the Alps with
-    the great lakes (Lake Como, Lake Maggiore, Lake Lugano) to the
-    North.  Milan is considered the Italian economic and finance
-    center, with the headquarters of the Stock Exchange and of many of
-    the most important industrial and financial businesses of the
-    Country.  It is also the Italian symbol of fashion and design: it
-    hosts many of the main Italian fashion maisons and international
-    design fairs, such as "Settimana della Moda" (Milan Fashion Week)
-    and the "Salone Internazionale del Mobile" (Milan Furniture Fair);
-    also, a Design School operates at Politecnico di
-    Milano. <a class="pull-right pull-right-image"
-    href="http://www.turismo.milano.it/wps/wcm/connect/en/situr/home/artecultura/architettura/loc25"><img class="img-rounded"
-    src="/static/img/castle.jpg" alt="Sforza Castle" /></a></p>
+          <p>With a population of about 1.3 million, Milan, the capital of
+          Lombardy, is located in the Po Valley, not far from the Alps with
+          the great lakes (Lake Como, Lake Maggiore, Lake Lugano) to the
+          North.  Milan is considered the Italian economic and finance
+          center, with the headquarters of the Stock Exchange and of many of
+          the most important industrial and financial businesses of the
+          Country.  It is also the Italian symbol of fashion and design: it
+          hosts many of the main Italian fashion maisons and international
+          design fairs, such as "Settimana della Moda" (Milan Fashion Week)
+          and the "Salone Internazionale del Mobile" (Milan Furniture Fair);
+          also, a Design School operates at Politecnico di
+          Milano. <a class="pull-right pull-right-image"
+              href="http://www.turismo.milano.it/wps/wcm/connect/en/situr/home/artecultura/architettura/loc25"><img class="img-rounded"
+              src="/static/img/castle.jpg" alt="Sforza Castle" /></a></p>
 
-  <p>Milan hosts the "Teatro alla Scala", considered the temple of
-    lyrics all over the world, and several prose theatres such as the
-    "Piccolo Teatro" founded by Giorgio Strehler.</p>
+          <p>Milan hosts the "Teatro alla Scala", considered the temple of
+          lyrics all over the world, and several prose theatres such as the
+          "Piccolo Teatro" founded by Giorgio Strehler.</p>
 
-  <p>In Milan are located the headquarters of the main daily
-    newspapers (Il Corriere della Sera, Il Sole 24 Ore) and many of
-    the main Italian publishers (Mondadori, Feltrinelli, Garzanti,
-    Rizzoli).</p>
+          <p>In Milan are located the headquarters of the main daily
+          newspapers (Il Corriere della Sera, Il Sole 24 Ore) and many of
+          the main Italian publishers (Mondadori, Feltrinelli, Garzanti,
+          Rizzoli).</p>
 
-  <p>The city offers to visitors the possibility to admire a wide
-    range of monuments, museums and buildings reflecting the vestiges
-    of history and culture left by many people who lived here. The
-    ancient Roman remains are preserved at the Colonne di San Lorenzo,
-    whereas the Romanesque can be admired at Sant’Ambrogio,
-    Sant’Eustorgio or San Simpliciano Basilicas. The Duomo is one of
-    the largest cathedrals in the world and the most important example
-    of Gothic architecture in Italy. The Castello Sforzesco, built on
-    the wishes of the Duke Francesco Sforza, nowadays hosts the
-    Michelangelo’s "Pietà Rondanini" and several museums. The church
-    of Santa Maria delle Grazie hosts the famous masterpiece "The Last
-    Supper" by Leonardo da Vinci - declared part of the World Heritage
-    by UNESCO.</p>
+          <p>The city offers to visitors the possibility to admire a wide
+          range of monuments, museums and buildings reflecting the vestiges
+          of history and culture left by many people who lived here. The
+          ancient Roman remains are preserved at the Colonne di San Lorenzo,
+          whereas the Romanesque can be admired at Sant’Ambrogio,
+          Sant’Eustorgio or San Simpliciano Basilicas. The Duomo is one of
+          the largest cathedrals in the world and the most important example
+          of Gothic architecture in Italy. The Castello Sforzesco, built on
+          the wishes of the Duke Francesco Sforza, nowadays hosts the
+          Michelangelo’s "Pietà Rondanini" and several museums. The church
+          of Santa Maria delle Grazie hosts the famous masterpiece "The Last
+          Supper" by Leonardo da Vinci - declared part of the World Heritage
+          by UNESCO.</p>
 
-  <p>The city has always participated actively to the National History
-    since its origins, contributing to the purposes and the aims that
-    led to reunification of Italy in the 18th century. Some
-    distinguished people, who gave a significant contribution to
-    Italian culture, lived in Milan, such as Leonardo da Vinci (who
-    lived in Milan from 1482 to 1500), the poet and novelist
-    Alessandro Manzoni, the musician Arturo Toscanini, the writer
-    Carlo Emilio Gadda, the film director Luchino Visconti. Two Nobel
-    prizes operated in Milan: Giulio Natta (1963, in chemistry) and
-    Dario Fo (1997, in literature).</p>
+          <p>The city has always participated actively to the National History
+          since its origins, contributing to the purposes and the aims that
+          led to reunification of Italy in the 18th century. Some
+          distinguished people, who gave a significant contribution to
+          Italian culture, lived in Milan, such as Leonardo da Vinci (who
+          lived in Milan from 1482 to 1500), the poet and novelist
+          Alessandro Manzoni, the musician Arturo Toscanini, the writer
+          Carlo Emilio Gadda, the film director Luchino Visconti. Two Nobel
+          prizes operated in Milan: Giulio Natta (1963, in chemistry) and
+          Dario Fo (1997, in literature).</p>
 
-  <p>Expo 2015 is the next scheduled Universal Exposition and between
-    May 1st and October 31st 2015 will be hosted in Milan. The Expo
-    goal is not only to show the latest advances in technology, but
-    also to welcome and to interpret the new challenges that human
-    mankind faces nowadays. A theme of Expo 2015 will be "Feeding the
-    planet, energy for life".</p>
-</div>
+          <p>Expo 2015 is the next scheduled Universal Exposition and between
+          May 1st and October 31st 2015 will be hosted in Milan. The Expo
+          goal is not only to show the latest advances in technology, but
+          also to welcome and to interpret the new challenges that human
+          mankind faces nowadays. A theme of Expo 2015 will be "Feeding the
+          planet, energy for life".</p>
+      </div>
+  </div>
 {%- endblock %}
