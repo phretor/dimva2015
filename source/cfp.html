@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container content">
+    <h1>Call for Papers</h1>
+
+    <div class="row">
+        <div class="col-md-8">
+            <p>DIMVA solicits submission of high-quality, original scientific papers presenting novel research on malware analysis, intrusion detection, and related systems security topics. Submissions of two types are invited:</p>
+            <ul>
+                <li><p><strong>Full papers</strong>, presenting novel and mature research results. Full papers are limited to 20 pages.</p></li>
+                <li><p><strong>Short papers</strong>, presenting original, still ongoing work that has not yet reached the maturity required for a full paper. Short papers are limited to 10 pages and will be included in the proceedings containing &quot;Extended Abstract&quot; in the title.</p></li>
+            </ul>
+
+            <p>As per our tradition, DIMVA encourages submissions from the following broad areas:</p>
+
+            <ul>
+                <li><strong>Intrusion Detection</strong>
+                    <ul>
+                        <li>Novel approaches and domains</li>
+                        <li>Insider detection</li>
+                        <li>Prevention and response</li>
+                        <li>Data leakage and exfiltration</li>
+                        <li>Result correlation and cooperation</li>
+                        <li>Evasion and other attacks</li>
+                        <li>Potentials and limitations</li>
+                        <li>Operational experiences</li>
+                        <li>Privacy, legal and social aspects</li>
+                    </ul>
+                </li>
+                <li><strong>Malware Detection</strong>
+                    <ul>
+                        <li>Automated analyses</li>
+                        <li>Behavioral models</li>
+                        <li>Prevention and containment</li>
+                        <li>Infiltration</li>
+                        <li>Acquisition and monitoring</li>
+                        <li>Forensics and recovery</li>
+                        <li>Underground economy</li>
+                    </ul>
+                </li>
+                <li><strong>Vulnerability Assessment</strong>
+                    <ul>
+                        <li>Vulnerability detection</li>
+                        <li>Vulnerability prevention</li>
+                        <li>Fuzzing techniques</li>
+                        <li>Classification and evaluation</li>
+                        <li>Situational awareness</li>
+                    </ul>
+                </li>
+            </ul>
+            <h2 id="special-theme">Special theme</h2>
+            <p>This year, due to the increased threats against <em>critical
+                infrastructures</em> and <em>industrial control systems</em>, we encourage
+            submissions in these areas. Specifically, we welcome strong technical
+            contributions that consider the cross-area obstacles (e.g., privacy, societal
+            and legal aspects) that arise when deploying protection measures in the real
+            world.</p>
+        </div>
+        <div class="col-md-4">
+            {% include 'snippets/dates.html' %}
+            {% include "snippets/cfp.html" %}
+        </div>
+    </div>
+</div>
+{% endblock %}
