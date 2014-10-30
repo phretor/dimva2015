@@ -145,9 +145,14 @@
   <h2 id="accomodation">Accomodation</h2>
   <p>We propose the following accomodation options.</p>
 
-  <div class="alert alert-danger" role="alert">
-    <p>We strongly recommend to book in advance, because Milan will host the EXPO 2015 between May and October, and hotel prices are likely to be quite high!</p>
-  </div>
+  {% include "snippets/book.html" %}
+
+  <h3>Obtaining reasonable rates</h3>
+  <p>In addition to booking in advance, we recommend to mention that the
+  reservation is for an <strong>event hosted by Politecnico di Milano</strong>.
+  Unfortunately, due to the peak season, we were unable to block any room.
+  However, since the hotels have been selected by our media office, they
+  usually give good rates for our guests.</p>
 
   <div class="row">
   {% for h in hotels %}
