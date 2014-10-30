@@ -168,3 +168,13 @@ body {
 .hotel-info .fa-star {
     color: orange;
 }
+
+/* navbar */
+.navbar-nav.navbar-right:last-child {
+    margin-right: 0px !important;
+}
+
+/* twitter */
+.navbar-nav.navbar-right:last-child {
+    font-size: x-large;
+}
