@@ -104,11 +104,12 @@ _hotels = [
 
     {'name': 'Hotel Palazzo delle Stelline',
      'stars': 3,
+     'code': 'Mention that "Politecnico di Milano" recommended this hotel',
      'address': 'Corso Magenta 61',
      'phone': '+39 02 4818431',
      'fax': '+39 0248194281',
      'url': 'http://hotelpalazzostelline.it',
-     'price': (90, 160)},
+     'price': (90, 160) },
 
     {'name': 'Hotel Mediolanum',
      'stars': 4,
@@ -125,18 +126,6 @@ _hotels = [
      'phone': '+30 02 63151',
      'price': (70, 90),
      'url': 'http://www.ibis.com/gb/hotel-0933-ibis-milano-centro/index.shtml'},
-
-    {'name': 'Hotel NH Milano Machiavelli',
-     'stars': 4,
-     'address': 'Via Lazzaretto, 5',
-     'phone': '+39 02 631141',
-     'url': 'http://www.nh-hotels.it/hotel/nh-milano-machiavelli'},
-
-    {'name': 'NH Milano Touring',
-     'stars': 4,
-     'address': 'Via Ugo Tarchetti, 2',
-     'phone': '+39 02 63351',
-     'url': 'http://www.nh-hotels.com/nh/en/hotels/italy/milan/nh-milano-touring.html'},
 
     {'name': 'Best Western Hotel Madison Milano',
      'stars': 4,
