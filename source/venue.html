@@ -143,7 +143,7 @@
   <hr />
 
   <h2 id="accomodation">Accomodation</h2>
-  <p>We propose the following accomodation options.</p>
+  <p>We propose the following accomodation options. Price ranges are not official and may change depending on many factors.</p>
 
   {% include "snippets/book.html" %}
 
@@ -160,7 +160,7 @@
     <div class="well hotel-info">
       <h4>{{ h.name }} <small>{% for s in range(0, h.stars) %}<i class="fa fa-star"></i>{% endfor %}</small></h4>
       {% if h.price %}
-      <i class="fa fa-money"></i>&nbsp;&nbsp;{{ h.price[0] }}&mdash;{{ h.price[1] }}{{ currency|safe }}<br />
+      <i class="fa fa-money"></i>&nbsp;&nbsp;{{ h.price[0] }}&mdash;{{ h.price[1] }}{{ currency|safe }}{% if h.code %}&nbsp;&nbsp;<span data-toggle="tooltip" data-placement="top" title="{{ h.code }}" class="label label-primary">DISCOUNT CODE</span>{% endif %}<br />
       {% endif %}
 
       {% if h.phone %}
@@ -251,3 +251,13 @@
       </div>
   </div>
 {%- endblock %}
+
+{% block scripts %}
+   {{ super() }}
+
+  <script>
+   $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+   })
+  </script>
+{% endblock scripts %}

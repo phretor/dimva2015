@@ -113,6 +113,7 @@ _hotels = [
     {'name': 'Hotel Mediolanum',
      'stars': 4,
      'price': (130, 160),
+     'code': 'Mention "Politecnico di Milano"',
      'phone': '+39 02 6705312',
      'fax': '+39 02 66981921',
      'address': 'Via Mauro Macchi, 1',
@@ -129,14 +130,12 @@ _hotels = [
      'stars': 4,
      'address': 'Via Lazzaretto, 5',
      'phone': '+39 02 631141',
-     'price': (120, 140),
      'url': 'http://www.nh-hotels.it/hotel/nh-milano-machiavelli'},
 
     {'name': 'NH Milano Touring',
      'stars': 4,
      'address': 'Via Ugo Tarchetti, 2',
      'phone': '+39 02 63351',
-     'price': (140, 180),
      'url': 'http://www.nh-hotels.com/nh/en/hotels/italy/milan/nh-milano-touring.html'},
 
     {'name': 'Best Western Hotel Madison Milano',

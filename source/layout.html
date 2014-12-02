@@ -107,6 +107,7 @@
       </footer>
     </div>
 
+    {% block scripts %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
@@ -119,5 +120,6 @@
       ga('create', 'UA-56822236-1', 'auto');
       ga('send', 'pageview');
     </script>
+    {% endblock scripts %}
   </body>
 </html>
