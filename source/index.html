@@ -1,4 +1,5 @@
 {% extends "layout.html" %}
+{% from 'snippets/sponsors.html' import show_sponsors %}
 
 {% block content %}
 <div id="myCarousel" class="carousel slide hidden-xs hidden-sm" data-ride="carousel">
@@ -79,6 +80,10 @@
 
         <p>DIMVA is organized by the special interest group <a href="http://www.gi-fg-sidar.de/">Security – Intrusion Detection and Response (SIDAR)</a> of the <a href="http://www.gi-ev.de/english/at-a-glance/">German Informatics Society (GI)</a>. The conference proceedings will appear in Springer <a href="http://www.springer.com/computer/security+and+cryptology/">Lecture Notes in Computer Science (LNCS)</a> 8850 series
         </p>
+
+        <hr />
+
+        {{ show_sponsors(6) }}
     </div>
     <div class="col-md-4">
         {% include "snippets/dates.html" %}

@@ -1,47 +1,70 @@
-{% extends "layout.html" %}
+{% extends "content_with_sidebar.html" %}
 
-{% block content %}
-<div class="container content">
-    <h1>Committees</h1>
+{% block content_title %}Committees{% endblock %}
 
-    <div class="row">
-        <div class="col-md-8">
-            <h2 id="organizing-committee">Organizing Committee</h2>
-            <ul>
-                <li><p><strong>General Chair:</strong> Federico Maggi, Politecnico di Milano, Italy (info {at} dimva.org)</p></li>
-                <li><p><strong>Program Chair:</strong> Magnus Almgren, Chalmers University of Technology, Gothenburg, Sweden (pc-chair {at} dimva.org)</p></li>
-            </ul>
+{% block main_content %}
+    <h2 id="organizing-committee">Organizing Committee</h2>
+    <ul>
+        <li><p><strong>General Chair:</strong> Federico Maggi, Politecnico di Milano, Italy (info {at} dimva.org)</p></li>
+        <li><p><strong>Program Chair:</strong> Magnus Almgren, Chalmers University of Technology, Gothenburg, Sweden (pc-chair {at} dimva.org)</p></li>
+    </ul>
 
-            <h2 id="program-committee">Program Committee</h2>
-            <p>TBA</p>
-
-            <h2 id="steering-committee">Steering Committee</h2>
-            <h3 id="chairs">Chairs</h3>
-            <ul>
-                <li>Ulrich Flegel, Infineon Technologies, Germany</li>
-                <li>Michael Meier, University of Bonn, Germany</li>
-            </ul>
-            <h3 id="members">Members</h3>
-            <ul>
-                <li>Herbert Bos, Vrije Universiteit Amsterdam, Netherlands</li>
-                <li>Danilo M. Bruschi, Universita degli Studi di Milano, Italy</li>
-                <li>Roland Bueschkes, RWE AG, Germany</li>
-                <li>Lorenzo Cavallaro, Royal Holloway, University of London, UK</li>
-                <li>Herve Debar, Telecom SudParis, France</li>
-                <li>Sven Dietrich, City University of New York, USA</li>
-                <li>Bernhard Haemmerli, Acris GmbH &amp; HSLU Lucerne, Switzerland</li>
-                <li>Marc Heuse, Baseline Security Consulting, Germany</li>
-                <li>Thorsten Holz, Ruhr-Universitaet Bochum, Germany</li>
-                <li>Marko Jahnke, Federal Office for Information Security, Germany</li>
-                <li>Klaus Julisch, Deloitte, Switzerland</li>
-                <li>Christian Kreibich, ICSI, USA</li>
-                <li>Christopher Kruegel, UC Santa Barbara, USA</li>
-                <li>Pavel Laskov, University of Tuebingen, Germany</li>
-                <li>Konrad Rieck, University of Goettingen, Germany</li>
-                <li>Robin Sommer, ICSI/LBNL, USA</li>
-                <li>Diego Zamboni, CFEngine AS, Norway</li>
-            </ul>
-        </div>
-    </div>
-</div>
+    <h2 id="program-committee">Program Committee</h2>
+    <ul>
+        <li>Gianluca Stringhini, University College London</li>
+        <li>Hervé Debar, Télécom SudParis</li>
+        <li>Nick Nikiforakis, Stony Brook University</li>
+        <li>Cristiano Giuffrida, Vrije Universiteit Amsterdam</li>
+        <li>Marco Balduzzi, Trend Micro Research</li>
+        <li>Lorenzo Cavallaro, Royal Holloway, University of London</li>
+        <li>Mauro Conti, University of Padua</li>
+        <li>Konrad Rieck, University of Göttingen</li>
+        <li>Andreas Schaad, SAP AG</li>
+        <li>Ulrich Flegel, Infineon Technologies AG</li>
+        <li>Simin Nadjm-Tehrani, Linköping university</li>
+        <li>Corrado Leita, Lastline Inc.</li>
+        <li>Michael Meier, University of Bonn and Fraunhofer FKIE</li>
+        <li>Christian Rossow, Saarland University</li>
+        <li>Davide Balzarotti, Eurecom</li>
+        <li>James Riordan, MIT Lincoln Laboratory</li>
+        <li>Sven Dietrich, City University of New York - John Jay College of Criminal Justice</li>
+        <li>Hanno Langweg, HTWG Konstanz</li>
+        <li>Federico Maggi, Politecnico di Milano</li>
+        <li>Andrea Lanzi, Università degli studi di Milano</li>
+        <li>Leyla Bilge, Symantec Research Labs</li>
+        <li>Dina Hadziosmanovic, Delft University of Technology</li>
+        <li>Mashael Al-Sabah, Qatar Computing Research Institute(QCRI) and Qatar University(QU)</li>
+        <li>Vincenzo Gulisano, Chalmers University of Technology</li>
+        <li>Sotiris Ioannidis, FORTH</li>
+        <li>Matthias Neugschwandtner, SBA Research</li>
+        <li>Urko Zurutuza, Mondragon University</li>
+        <li>Manuel Egele, University of California, Santa Barbara</li>
+        <li>Thorsten Holz, Ruhr-Universität Bochum</li>
+    </ul>
+    <h2 id="steering-committee">Steering Committee</h2>
+    <h3 id="chairs">Chairs</h3>
+    <ul>
+        <li>Ulrich Flegel, Infineon Technologies, Germany</li>
+        <li>Michael Meier, University of Bonn, Germany</li>
+    </ul>
+    <h3 id="members">Members</h3>
+    <ul>
+        <li>Herbert Bos, Vrije Universiteit Amsterdam, Netherlands</li>
+        <li>Danilo M. Bruschi, Universita degli Studi di Milano, Italy</li>
+        <li>Roland Bueschkes, RWE AG, Germany</li>
+        <li>Lorenzo Cavallaro, Royal Holloway, University of London, UK</li>
+        <li>Herve Debar, Telecom SudParis, France</li>
+        <li>Sven Dietrich, City University of New York, USA</li>
+        <li>Bernhard Haemmerli, Acris GmbH &amp; HSLU Lucerne, Switzerland</li>
+        <li>Marc Heuse, Baseline Security Consulting, Germany</li>
+        <li>Thorsten Holz, Ruhr-Universitaet Bochum, Germany</li>
+        <li>Marko Jahnke, Federal Office for Information Security, Germany</li>
+        <li>Klaus Julisch, Deloitte, Switzerland</li>
+        <li>Christian Kreibich, ICSI, USA</li>
+        <li>Christopher Kruegel, UC Santa Barbara, USA</li>
+        <li>Pavel Laskov, University of Tuebingen, Germany</li>
+        <li>Konrad Rieck, University of Goettingen, Germany</li>
+        <li>Robin Sommer, ICSI/LBNL, USA</li>
+        <li>Diego Zamboni, CFEngine AS, Norway</li>
+    </ul>
 {%- endblock %}

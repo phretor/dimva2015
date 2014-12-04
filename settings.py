@@ -30,7 +30,7 @@ _hotels = [
      'phone': '+39 02 2892515',
      'fax': '+39 02 2893430',
      'url': 'http://www.hotellombardia.com',
-     'price': (60, 90)},
+     },
 
     {'name': 'Oasi Village Hotel Resort',
      'stars': 3,
@@ -64,7 +64,6 @@ _hotels = [
 
     {'name': 'Hotel Gamma',
      'stars': 3,
-     'price': (80, 100),
      'phone': '+39 02 26413152',
      'fax': '+39 02 2640255',
      'address': 'Via Valvassori Peroni 85',
@@ -72,7 +71,6 @@ _hotels = [
 
     {'name': 'Hotel Dieci',
      'stars': 4,
-     'price': (90, 170),
      'address': 'Largo Rio de Janeiro, 12',
      'phone': '+39 02 70608180',
      'fax': '+39 02 26684206',

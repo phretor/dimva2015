@@ -178,3 +178,9 @@ body {
 .navbar-nav.navbar-right:last-child {
     font-size: x-large;
 }
+
+/* sponsors */
+div.flat-sponsors a {
+    float: left;
+    margin-right: 10px;
+}
