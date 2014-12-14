@@ -1,0 +1,84 @@
+{% extends "content_with_sidebar.html" %}
+
+{% block content_title %}Submission{% endblock %}
+
+{% block main_content %}
+
+<p class="lead">Before and while submitting a paper to DIMVA, please
+make sure to read the following instructions.</p>
+
+<h3>Paper length and content</h3>
+<p>Also this year, DIMVA accepts full or short papers. In either case,
+the research contribution must be novel and not substantially
+overlapping with work that has been published before, or that is
+simultaneously under submission.</p>
+
+<h4>Full papers</h4>
+<p>Must present novel and mature research results, are limited to 20
+  pages, prepared according to the instructions provided below.  They
+  will be reviewed by the program committee, and papers accepted for
+  presentation at the conference will be included in the
+  proceedings.</p>
+
+<h4>Short papers <small>EXTENDED ABSTRACTS</small></h4>
+<p>Must present original, still ongoing work that has not yet
+  reached the maturity required for a full paper, are limited to 10
+  pages, prepared according to the instructions provided below.
+  They will also be reviewed by the program committee, and papers
+  accepted for presentation at the conference will be included in
+  the proceedings (containing Extended Abstract in the title).</p>
+
+<h3>Formatting rules</h3>
+
+<p>Submitted papers must be in English and must not substantially
+  overlap work that has been published before, or that is
+  simultaneously in submission to a journal or a conference with
+  proceedings. Simultaneous submission, submission of previously
+  published work, and plagiarism constitute dishonesty or fraud.
+  DIMVA prohibits these practices and may take appropriate action
+  against authors who have committed them.
+</p>
+
+<h4>Authors' names</h4>
+<p>Submissions must not be double blind, (i.e., authors information
+  must appear in the paper).</p>
+
+<h4>Ethical aspects</h4>
+<p>Authors are encouraged to consider ethical aspects of their
+  research and the impact of publication of their work.</p>
+
+<h3>Submission and proceedings</h3>
+
+<p>All papers must be submitted electronically in PDF format via
+  the <a data-toggle="tooltip" data-placement="top"
+  title="COMING SOON" href="#">EasyChair</a> system.</p>
+
+<p>The conference proceedings will be published in the Springer LNCS
+  series. Submissions must be formatted in LNCS style according to the
+  instructions provided
+  by <a href="http://www.springer.de/comp/lncs/authors.html">Springer
+  Verlag</a>.</p>
+
+<h3>Presentation</h3>
+<p>Authors of accepted papers must ensure that their papers will be
+  presented at the conference. Presentations must also be held in
+  English.</p>
+
+{% endblock %}
+
+{% block sidebar %}
+  {% include 'snippets/dates.html' %}
+  {% include "snippets/cfp.html" %}
+
+  {{ show_sponsors(11) }}
+{% endblock %}
+
+{% block scripts %}
+   {{ super() }}
+
+  <script>
+   $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+   })
+  </script>
+{% endblock scripts %}
