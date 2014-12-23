@@ -118,13 +118,6 @@ _hotels = [
      'address': 'Via Mauro Macchi, 1',
      'url': 'http://www.mediolanumhotel.it'},
 
-    {'name': 'Ibis Milano Centro',
-     'stars': 3,
-     'address': 'Via Camillo Finocchiaro Aprile, 2',
-     'phone': '+30 02 63151',
-     'price': (70, 90),
-     'url': 'http://www.ibis.com/gb/hotel-0933-ibis-milano-centro/index.shtml'},
-
     {'name': 'Best Western Hotel Madison Milano',
      'stars': 4,
      'price': (100, 130),
