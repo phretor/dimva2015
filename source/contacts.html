@@ -44,3 +44,11 @@
     118</li>
   </ul>
 {%- endblock %}
+
+{% block sidebar %}
+    {{ show_sponsors(11) }}
+
+    <div class="well">{% include "snippets/tweets.html" %}</div>
+
+    {% include "snippets/expo.html" %}
+{% endblock %}

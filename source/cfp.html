@@ -57,7 +57,8 @@
 
 {% block sidebar %}
     {% include 'snippets/dates.html' %}
-    {% include "snippets/cfp.html" %}
-
     {{ show_sponsors(11) }}
+
+    {% include "snippets/cfp.html" %}
+    {% include "snippets/expo.html" %}
 {% endblock %}
