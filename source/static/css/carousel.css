@@ -38,7 +38,7 @@ body {
 
 /* Carousel base class */
 .carousel {
-  height: 500px;
+  height: 400px;
   margin-bottom: 60px;
   border-bottom: solid 10px #eee;
   overflow: hidden;
