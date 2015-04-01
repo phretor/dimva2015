@@ -1,5 +1,7 @@
 import urlparse
 
+import cal
+
 FILTER_PARTIALS = True
 
 FILTER = [
@@ -139,3 +141,5 @@ for h in _hotels:
     c = h.copy()
     c.update({'domain': urlparse.urlparse(h['url']).hostname})
     hotels.append(c)
+
+program = cal.CalendarSerializer().get_agenda_by_day()
