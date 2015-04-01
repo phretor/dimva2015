@@ -1,0 +1,18 @@
+{% extends "content_with_sidebar.html" %}
+{% import "macros/macros.html" as macros %}
+
+{% block content_title %}Program{% endblock %}
+
+{% block main_content %}
+
+{% for day,events in program|dictsort %}
+<h2>{{day.format('MMMM D')}}</h2>
+
+<div class="panel-group" id="day.format('MMMMD')" role="tablist" aria-multiselectable="true">
+  {% for e in events %}
+    {{ macros.slot(loop.index, day.format('MMMMD'), e.description, e.start, e.end, "", e.summary) }}
+  {% endfor %}
+</div>
+{% endfor %}
+
+{% endblock %}

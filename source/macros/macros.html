@@ -1,0 +1,23 @@
+{% macro slot(num, group, body, start, end, place, title) -%}
+<div class="panel panel-default">
+  <div class="panel-heading" role="tab" id="heading{{num}}">
+    <div class="row">
+      <div class="col-md-2">{{start.format('HH:mm')}}&mdash;{{end.format('HH:mm')}}</div>
+      <div class="col-md-7">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#{{group}}" href="#collapse{{num}}" aria-expanded="true" aria-controls="collapse{{num}}">{{title}}</a>
+        </h4>
+      </div>
+      <div class="col-md-3">{{place}}</div>
+    </div>
+  </div>
+
+    {% if body != "" %}
+    <div id="collapse{{num}}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading{{num}}">
+      <div class="panel-body">
+        {{body}}
+      </div>
+    </div>
+    {% endif %}
+  </div>
+{%- endmacro %}
