@@ -15,7 +15,7 @@
     {% if body != "" %}
     <div id="collapse{{num}}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading{{num}}">
       <div class="panel-body">
-        {{body}}
+        {{body|safe}}
       </div>
     </div>
     {% endif %}
