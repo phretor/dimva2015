@@ -5,7 +5,7 @@
 
 {% block main_content %}
 {% for day,events in program|dictsort %}
-<h2>{{day.format('MMMM D')}}</h2>
+<h2 id="{{day.format('MMMM-D')}}" style="padding-top: 80px; margin-top: -80px;">{{day.format('MMMM D')}}</h2>
 
 <div class="panel-group" id="day.format('MMMMD')" role="tablist" aria-multiselectable="true">
   {% for e in events %}
