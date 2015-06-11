@@ -9,7 +9,7 @@
 
 <div class="panel-group" id="day.format('MMMMD')" role="tablist" aria-multiselectable="true">
   {% for e in events %}
-    {{ macros.slot(loop.index, day.format('MMMMD'), e.description, e.start, e.end, "", e.summary) }}
+    {{ macros.slot(loop.index, day.format('MMMMD'), e.description, e.start, e.end, e.place, e.summary) }}
   {% endfor %}
 </div>
 {% endfor %}
