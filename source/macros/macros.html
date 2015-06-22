@@ -1,5 +1,10 @@
+{% macro summary(num, e) -%}
+<dt>{{e.start.format('HH:mm')}}&mdash;{{e.end.format('HH:mm')}}</dt>
+<dd><a href="#slot-{{num}}">{{e.summary}}</a></dd>
+{%- endmacro %}
+
 {% macro slot(num, group, body, start, end, place, title) -%}
-<div class="panel panel-default">
+<div id="slot-{{num}}" class="panel panel-default">
   <div class="panel-heading" role="tab" id="heading{{num}}">
     <div class="row">
       <div class="col-md-2">{{start.format('HH:mm')}}&mdash;{{end.format('HH:mm')}}</div>
