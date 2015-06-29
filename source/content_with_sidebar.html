@@ -11,7 +11,9 @@
         </div>
         <div class="col-md-4">
             {% block sidebar %}
-                {{ show_sponsors(11) }}
+              {{ show_sponsors(11) }}
+              <hr />
+              {% include "snippets/expo.html" %}
             {% endblock %}
         </div>
     </div>
