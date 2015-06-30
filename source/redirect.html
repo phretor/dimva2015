@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<p>Please wait...</p>
+{% endblock content %}
+
+{% block head %}
+<meta http-equiv="refresh" content="0;URL='{% block url %}{% endblock url %}'" />
+{% endblock %}
